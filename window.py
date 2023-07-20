@@ -37,6 +37,9 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
         if self.data.current_questions1 >= 5:
             QMessageBox.warning(self, "Warning", "Reaches Maximum Data Records(5 Records)", QMessageBox.Cancel)
             return
+        if self.listWidgetQuestion1.currentItem() is None:
+            QMessageBox.warning(self, "Warning", "Plase select a question.", QMessageBox.Cancel)
+            return
         if self.textEdit_SelfDefine1.toPlainText() == "":
             self.listWidgetWrite1.addItem(self.listWidgetQuestion1.currentItem().text())
             selected_items = self.listWidgetQuestion1.selectedItems()
@@ -68,6 +71,9 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
     def select2_callback(self):
         if self.data.current_questions2 >= 15:
             QMessageBox.warning(self, "Warning", "Reaches Maximum Data Records(15 Records)", QMessageBox.Cancel)
+            return
+        if self.listWidgetQuestion1.currentItem() is None:
+            QMessageBox.warning(self, "Warning", "Plase select a question.", QMessageBox.Cancel)
             return
         if self.textEdit_SelfDefine2.toPlainText() == "":
             self.listWidgetWrite2.addItem(self.listWidgetQuestion2.currentItem().text())
