@@ -10,42 +10,9 @@
  },
  "caption": "",
  "global": [
-  {
-   "question": "",
-   "answer": ""
-  },
-  {
-   "question": "",
-   "answer": ""
-  },
-  {
-   "question": "",
-   "answer": ""
-  },
-  {
-   "question": "",
-   "answer": ""
-  },
-  {
-   "question": "",
-   "answer": ""
-  }
+
  ],
  "breakpoint": [
-  {
-   "time": 0,
-   "question": "",
-   "answer": ""
-  },
-  {
-   "time": 0,
-   "question": "",
-   "answer": ""
-  },
-  {
-   "time": 0,
-   "question": "",
-   "answer": ""
-  }
+
  ]
 }
