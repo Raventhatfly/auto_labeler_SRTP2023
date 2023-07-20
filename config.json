@@ -1,0 +1,51 @@
+{
+ "info": {
+  "video_path": "",
+  "url": "",
+  "class": "movie",
+  "w": 480,
+  "h": 720,
+  "num_frame": 10000,
+  "fps": 25
+ },
+ "caption": "",
+ "global": [
+  {
+   "question": "",
+   "answer": ""
+  },
+  {
+   "question": "",
+   "answer": ""
+  },
+  {
+   "question": "",
+   "answer": ""
+  },
+  {
+   "question": "",
+   "answer": ""
+  },
+  {
+   "question": "",
+   "answer": ""
+  }
+ ],
+ "breakpoint": [
+  {
+   "time": 0,
+   "question": "",
+   "answer": ""
+  },
+  {
+   "time": 0,
+   "question": "",
+   "answer": ""
+  },
+  {
+   "time": 0,
+   "question": "",
+   "answer": ""
+  }
+ ]
+}
