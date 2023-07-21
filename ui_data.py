@@ -13,7 +13,10 @@ class UI_data(object):
     defaut_data = {}
     file_name = "example"
     current_questions1 = 0
+    current_questions1_with_answer = 0
     current_questions2 = 0
+    current_questions2_with_answer = 0
+    question2_ready_list = []
     def load_defualt(self):
         with open("config.json","r") as file:
             self.defaut_data = json.load(file)
