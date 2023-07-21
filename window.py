@@ -118,7 +118,8 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
                 self.data.class_name = self.listWidget_class.currentItem().text()
             text = "Number of frames:" + str(self.data.num_frames) + "\n"\
                  + "Frame Rate:" + str(self.data.fps) + "\n" + "Width:" + str(self.data.width) + "\n"\
-                 + "Height:" + str(self.data.height) + "\n" + "Class:" + self.data.class_name
+                 + "Height:" + str(self.data.height) + "\n" + "Class:" + self.data.class_name + "\n"\
+                 + "Path:" + str(self.data.path)
             self.textBrowserInfo.setText(text)
         except:
             QMessageBox.warning(self, "Warning", "Please fill in all the box in Basic Settings or press Use Default!", QMessageBox.Cancel)
@@ -165,12 +166,16 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
             self.data.file_name = self.textEditFileName.toPlainText()
         self.data.file_name += ".json"
         print(self.data.file_name)
-        with open(self.data.file_name,"w") as file:
+        path = "json_generated/" + self.data.file_name
+        print(path)
+        with open(path,"w") as file:
             dict = self.data.defaut_data.copy()
+
             dict["caption"] = self.textEdit_desciprition.toPlainText()
             dict["info"]["w"] = self.data.width
             dict["info"]["h"] = self.data.height
             dict["info"]["fps"] = self.data.fps
+            dict["info"]["video_path"] = self.data.path
             dict["info"]["num_frame"] = self.data.num_frames
             dict["info"]["video_path"] = self.data.path
             for question, answer in self.data.questions1.items():
