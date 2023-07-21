@@ -197,6 +197,7 @@ class Test_window(QMainWindow, Ui_MainWindow):
                 dict["info"]["video_path"] = self.data.path
                 dict["info"]["num_frame"] = self.data.num_frames
                 dict["info"]["video_path"] = self.data.path
+                dict["info"]["class"] = self.data.class_name
                 for data1 in self.data.question1_ready_list:
                     if data1["answer"] != "":
                         dict["global"].append({"question":data1["question"],"answer":data1["answer"]})
