@@ -1,0 +1,41 @@
+{
+ "info": {
+  "video_path": "1",
+  "url": "",
+  "class": "movie",
+  "w": 480,
+  "h": 720,
+  "num_frame": 10000,
+  "fps": 25
+ },
+ "caption": "none",
+ "global": [
+  {
+   "question": "Where does it happen in the video?",
+   "answer": "1"
+  },
+  {
+   "question": "How many man and woman appears in the video?",
+   "answer": "2"
+  },
+  {
+   "question": "How many characters appears in this video?",
+   "answer": "3"
+  },
+  {
+   "question": "Does it happen during day or nigth?",
+   "answer": "4"
+  },
+  {
+   "question": "When does the things in the video happens, ancient age, modern age or future?",
+   "answer": "5"
+  }
+ ],
+ "breakpoint": [
+  {
+   "time": 1750,
+   "question": "What is the shirt color of the person?",
+   "answer": "blue"
+  }
+ ]
+}
