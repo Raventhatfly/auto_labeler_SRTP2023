@@ -9,13 +9,13 @@ from PyQt5.QtCore import pyqtSlot
 from ui_data import UI_data
 import copy
 
-class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗口类
+class Test_window(QMainWindow, Ui_MainWindow):
 
     def __init__(self):
-        super().__init__()  # 使用超类，继承父类的属性及方法
-        self.setupUi(self)  # 构造窗体界面
-        # self.setWindowIcon(QIcon("./img/result.png"))
-        self.setWindowTitle("Test_button")  # 设置窗体主体
+        super().__init__()
+        self.setupUi(self)
+        # self.setWindowIcon(QIcon("./icon/1.jpg"))
+        self.setWindowTitle("Json Generator")
         self.data = UI_data()
         self.data.load_defualt()
         self.initUI()
