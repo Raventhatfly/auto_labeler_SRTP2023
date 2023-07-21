@@ -3,8 +3,8 @@
   "video_path": "",
   "url": "",
   "class": "movie",
-  "w": 480,
-  "h": 720,
+  "w": 720,
+  "h": 480,
   "num_frame": 10000,
   "fps": 25
  },
