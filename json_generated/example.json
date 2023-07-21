@@ -1,0 +1,25 @@
+{
+ "info": {
+  "video_path": "1",
+  "url": "",
+  "class": "movie",
+  "w": 480,
+  "h": 720,
+  "num_frame": 10000,
+  "fps": 25
+ },
+ "caption": "1",
+ "global": [
+  {
+   "question": "Where does it happen in the video?",
+   "answer": "1"
+  }
+ ],
+ "breakpoint": [
+  {
+   "time": 1525,
+   "question": "What is the shirt color of the person?",
+   "answer": "1"
+  }
+ ]
+}
