@@ -7,6 +7,7 @@ from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtWidgets import QWidget, QMainWindow, QApplication
 from PyQt5.QtCore import pyqtSlot
 from ui_data import UI_data
+import copy
 
 class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗口类
 
@@ -40,15 +41,18 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
         if self.listWidgetQuestion1.currentItem() is None and self.textEdit_SelfDefine1.toPlainText() == "":
             QMessageBox.warning(self, "Warning", "Plase select a question.", QMessageBox.Cancel)
             return
+        text = ""
         if self.textEdit_SelfDefine1.toPlainText() == "":
             selected_item = self.listWidgetQuestion1.currentItem()
-            # if selected_item.listWidget()==self.listWidgetQuestion2:
-            self.listWidgetWrite1.addItem(selected_item.text())
+            text  = selected_item.text()
+            self.listWidgetWrite1.addItem(text)
             row = self.listWidgetQuestion1.row(selected_item)
             self.listWidgetQuestion1.takeItem(row)
         else:
             self.listWidgetWrite1.addItem(self.textEdit_SelfDefine1.toPlainText())
-        self.data.current_questions1 = self.data.current_questions1 + 1
+        self.data.question1_ready_list.append({"question": text, "answer": ""})
+        self.show_quesitons_num_info()
+        print(self.data.question1_ready_list)
     def select2_callback(self):
         if self.data.current_questions2 >= 15:
             QMessageBox.warning(self, "Warning", "Reaches Maximum Data Records(15 Records)", QMessageBox.Cancel)
@@ -66,26 +70,24 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
             self.listWidgetWrite2.addItem(self.textEdit_SelfDefine2.toPlainText())
             text = self.textEdit_SelfDefine2.toPlainText()
             self_define = True
-        self.data.current_questions2 = self.data.current_questions2 + 1
-        print(self.data.current_questions2)
         # data structure: (Time, Question, Answer, Self Defien?)-1 time means time not added
         self.data.question2_ready_list.append({"time":-1,"question":text,"answer":"","self_define":self_define})
+        # self.data.current_questions2 = len(self.data.question2_ready_list)
+        self.show_quesitons_num_info()
         print(self.data.question2_ready_list)
 
     def delete1_callback(self):
-        selected_items = self.listWidgetWrite1.selectedItems()
-        if selected_items:
-            text = ""
-            for item in selected_items:
-                text = item.text()
-                self.listWidgetWrite1.takeItem(self.listWidgetWrite1.row(item))
-            question = text.split(' Answer:')[0]
+        selected_item = self.listWidgetWrite1.currentItem()
+        if selected_item is not None:
+            row = self.listWidgetWrite1.row(selected_item)
+            text = selected_item.text()
+            self.listWidgetWrite1.takeItem(row)
+            question = self.data.question1_ready_list[row]["question"]
+            self.data.question1_ready_list.pop(row)
             self.listWidgetQuestion1.addItem(question)
-            print(self.data.questions1)
-            if question in self.data.questions1:
-                self.data.questions1.pop(question)
-            print(self.data.questions1)
-            self.data.current_questions1 = self.data.current_questions1 - 1
+            # self.data.current_questions1 = len(self.data.question1_ready_list)
+            self.show_quesitons_num_info()
+            print(self.data.question1_ready_list)
 
     def delete2_callback(self):
         selected_item = self.listWidgetWrite2.currentItem()
@@ -96,6 +98,8 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
             if self.data.question2_ready_list[row]["self_define"] == True:
                 self.listWidgetQuestion2.addItem(self.data.question2_ready_list[row]["question"])
             self.data.question2_ready_list.pop(row)
+            # self.data.current_questions1 = len(self.data.question1_ready_list)
+            self.show_quesitons_num_info()
             print(self.data.question2_ready_list)
 
     def default1_callback(self):
@@ -126,11 +130,14 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
         if self.listWidgetWrite1.currentItem() is None:
             QMessageBox.warning(self, "Warning", "Please select the question to add answer with!", QMessageBox.Cancel)
         elif self.textEditAnswer1.toPlainText() != "":
-            question = self.listWidgetWrite1.currentItem().text()
+            current_item = self.listWidgetWrite1.currentItem()
+            row = self.listWidgetWrite1.row(current_item)
+            question = self.data.question1_ready_list[row]["question"]
             answer = self.textEditAnswer1.toPlainText()
-            self.data.questions1[question] = answer
+            self.data.question1_ready_list[row]["answer"] = answer
             self.listWidgetWrite1.currentItem().setText(question + " Answer: " + answer)
-            print(self.data.questions1)
+            self.show_quesitons_num_info()
+            print(self.data.question1_ready_list)
 
     def addAnswer2_callback(self):
         if self.textEditAnswer2.toPlainText() == "":
@@ -149,11 +156,12 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
             time_stamp = (int(self.textEditTime1.toPlainText()) * 60 + int(self.textEditTIme2.toPlainText())) * self.data.fps
             self.data.question2_ready_list[row]["time"] = time_stamp
             self.listWidgetWrite2.currentItem().setText(question + " Answer: " + answer + " Time: "+ str(time_stamp))
+            self.show_quesitons_num_info()
             print(self.data.question2_ready_list)
 
 
     def generate_callback(self):
-        if self.data.current_questions1 < 5 or self.data.current_questions2 < 15:
+        if self.data.current_questions1_with_answer < 5 or self.data.current_questions2_with_answer < 15:
             message_box = QMessageBox()
             message_box.setIcon(QMessageBox.Question)
             message_box.setWindowTitle("Confirmation")
@@ -179,7 +187,8 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
                 pass
         except:
             with open(path,"w") as file:
-                dict = self.data.defaut_data.copy()
+                dict = copy.deepcopy(self.data.defaut_data.copy())
+                # dict = self.data.defaut_data.copy()
 
                 dict["caption"] = self.textEdit_desciprition.toPlainText()
                 dict["info"]["w"] = self.data.width
@@ -188,15 +197,14 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
                 dict["info"]["video_path"] = self.data.path
                 dict["info"]["num_frame"] = self.data.num_frames
                 dict["info"]["video_path"] = self.data.path
-                for question, answer in self.data.questions1.items():
-                    dict["global"].append({"question":question,"answer":answer})
-                print(self.data.questions2)
-                for data in self.data.question2_ready_list:
-                    if data["answer"] != "":
-                        dict["breakpoint"].append({"time":data["time"],"question":data["question"],"answer":data["answer"]})
+                for data1 in self.data.question1_ready_list:
+                    if data1["answer"] != "":
+                        dict["global"].append({"question":data1["question"],"answer":data1["answer"]})
+                for data2 in self.data.question2_ready_list:
+                    if data2["answer"] != "":
+                        dict["breakpoint"].append({"time":data2["time"],"question":data2["question"],"answer":data2["answer"]})
                 json.dump(dict,file,indent=1)
-                print("global questions number:%d"%self.data.current_questions1)
-                print("breakpoint questions number:%d"%self.data.current_questions2)
+                print(self.data.defaut_data)
         else:
             QMessageBox.warning(self, "Warning",
                                 "File already exists. Change the file name or delete the original one.",
@@ -226,3 +234,24 @@ class Test_window(QMainWindow, Ui_MainWindow):  # 继承至界面文件的主窗
             QMessageBox.warning(self, "Warning",
                                 "Please enter integer time!",
                                 QMessageBox.Cancel)
+
+    def get_num_answered(self,ready_list):
+        num = 0
+        for iter in ready_list:
+            if iter["answer"] != "":
+                num += 1
+        return num
+
+    def show_quesitons_num_info(self):
+        num_q1 = len(self.data.question1_ready_list)
+        num_q2 = len(self.data.question2_ready_list)
+        self.data.current_questions1 = num_q1
+        self.data.current_questions2 = num_q2
+        num_answered_q1 = self.get_num_answered(self.data.question1_ready_list)
+        num_answered_q2 = self.get_num_answered(self.data.question2_ready_list)
+        self.data.current_questions1_with_answer = num_answered_q1
+        self.data.current_questions2_with_answer = num_answered_q2
+        text1 = "Total:"+str(num_q1)+" Answered:"+str(num_answered_q1)
+        text2 = "Total:" + str(num_q2) + " Answered:" + str(num_answered_q2)
+        self.label_num_1.setText(text1)
+        self.label_num_2.setText(text2)

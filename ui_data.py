@@ -16,6 +16,7 @@ class UI_data(object):
     current_questions1_with_answer = 0
     current_questions2 = 0
     current_questions2_with_answer = 0
+    question1_ready_list = []
     question2_ready_list = []
     def load_defualt(self):
         with open("config.json","r") as file:
@@ -28,9 +29,3 @@ class UI_data(object):
             self.length_minute = int(self.num_frames/(self.fps * 60))
             self.length_second = int((self.num_frames - self.length_minute * 60 * self.fps)/self.fps)
             self.class_name = self.defaut_data["info"]["class"]
-
-    def add_questions1(self,question,answer):
-        self.questions1[question] = answer
-
-    def add_questions2(self,question,answer):
-        self.questions2[question]  = answer
