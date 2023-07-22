@@ -209,6 +209,17 @@ class Test_window(QMainWindow, Ui_MainWindow):
                         dict["breakpoint"].append({"time":data2["time"],"question":data2["question"],"answer":data2["answer"]})
                 json.dump(dict,file,indent=1)
                 print(self.data.defaut_data)
+            self.listWidgetWrite1.clear()
+            self.listWidgetWrite2.clear()
+            self.data.question1_ready_list = []
+            self.data.question2_ready_list = []
+            self.data.current_questions1 = 0
+            self.data.current_questions2 = 0
+            self.data.current_questions1_with_answer = 0
+            self.data.current_questions2_with_answer = 0
+            self.show_quesitons_num_info()
+
+
         else:
             QMessageBox.warning(self, "Warning",
                                 "File already exists. Change the file name or delete the original one.",
