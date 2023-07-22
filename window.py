@@ -51,6 +51,7 @@ class Test_window(QMainWindow, Ui_MainWindow):
         else:
             text = self.textEdit_SelfDefine1.toPlainText()
             self.listWidgetWrite1.addItem(text)
+            self.textEdit_SelfDefine1.clear()
         self.data.question1_ready_list.append({"question": text, "answer": ""})
         self.show_quesitons_num_info()
         print(self.data.question1_ready_list)
@@ -71,6 +72,7 @@ class Test_window(QMainWindow, Ui_MainWindow):
             self.listWidgetWrite2.addItem(self.textEdit_SelfDefine2.toPlainText())
             text = self.textEdit_SelfDefine2.toPlainText()
             self_define = True
+            self.textEdit_SelfDefine2.clear()
         # data structure: (Time, Question, Answer, Self Defien?)-1 time means time not added
         self.data.question2_ready_list.append({"time":-1,"question":text,"answer":"","self_define":self_define})
         # self.data.current_questions2 = len(self.data.question2_ready_list)
