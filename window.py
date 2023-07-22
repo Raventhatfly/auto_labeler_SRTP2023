@@ -268,7 +268,7 @@ class Test_window(QMainWindow, Ui_MainWindow):
         num_answered_q2 = self.get_num_answered(self.data.question2_ready_list)
         self.data.current_questions1_with_answer = num_answered_q1
         self.data.current_questions2_with_answer = num_answered_q2
-        text1 = "Total:"+str(num_q1)+" Answered:"+str(num_answered_q1)
-        text2 = "Total:" + str(num_q2) + " Answered:" + str(num_answered_q2)
+        text1 = "Total:"+str(num_q1)+" Answered:"+str(num_answered_q1) + " Fps:"+str(self.data.fps)
+        text2 = "Total:" + str(num_q2) + " Answered:" + str(num_answered_q2) + " Fps:"+str(self.data.fps)
         self.label_num_1.setText(text1)
         self.label_num_2.setText(text2)
