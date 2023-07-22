@@ -49,7 +49,8 @@ class Test_window(QMainWindow, Ui_MainWindow):
             row = self.listWidgetQuestion1.row(selected_item)
             self.listWidgetQuestion1.takeItem(row)
         else:
-            self.listWidgetWrite1.addItem(self.textEdit_SelfDefine1.toPlainText())
+            text = self.textEdit_SelfDefine1.toPlainText()
+            self.listWidgetWrite1.addItem(text)
         self.data.question1_ready_list.append({"question": text, "answer": ""})
         self.show_quesitons_num_info()
         print(self.data.question1_ready_list)
@@ -103,7 +104,7 @@ class Test_window(QMainWindow, Ui_MainWindow):
             print(self.data.question2_ready_list)
 
     def default1_callback(self):
-        # self.data.load_defualt()
+        self.data.load_defualt()
         self.textEdit_w.setText(str(self.data.width))
         self.textEdit_h.setText(str(self.data.height))
         self.textEdit.setText(str(self.data.fps))
@@ -115,6 +116,8 @@ class Test_window(QMainWindow, Ui_MainWindow):
             self.data.height = int(self.textEdit_h.toPlainText())
             self.data.fps = int(self.textEdit.toPlainText())
             self.data.path = self.textEdit_path.toPlainText()
+            self.data.length_minute = int(self.textEdit_len1.toPlainText())
+            self.data.length_second = int(self.textEdit_len2.toPlainText())
             self.data.num_frames = (int(self.data.length_minute)*60+self.data.length_second) * int(self.data.fps)
             if self.listWidget_class.currentItem() is not None:
                 self.data.class_name = self.listWidget_class.currentItem().text()
