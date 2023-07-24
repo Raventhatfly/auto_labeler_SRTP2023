@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'json_generatorKwryPA.ui'
+## Form generated from reading UI file 'json_generatorApRYlO.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.3
 ##
@@ -21,6 +21,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.listWidgetQuestion2 = QListWidget(self.centralwidget)
+        QListWidgetItem(self.listWidgetQuestion2)
         QListWidgetItem(self.listWidgetQuestion2)
         QListWidgetItem(self.listWidgetQuestion2)
         QListWidgetItem(self.listWidgetQuestion2)
@@ -142,11 +143,12 @@ class Ui_MainWindow(object):
         QListWidgetItem(self.listWidget_class)
         QListWidgetItem(self.listWidget_class)
         QListWidgetItem(self.listWidget_class)
+        QListWidgetItem(self.listWidget_class)
         self.listWidget_class.setObjectName(u"listWidget_class")
         self.listWidget_class.setGeometry(QRect(510, 30, 241, 61))
         self.horizontalLayoutWidget = QWidget(self.centralwidget)
         self.horizontalLayoutWidget.setObjectName(u"horizontalLayoutWidget")
-        self.horizontalLayoutWidget.setGeometry(QRect(130, 110, 301, 41))
+        self.horizontalLayoutWidget.setGeometry(QRect(130, 110, 311, 31))
         self.horizontalLayout = QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
@@ -208,7 +210,6 @@ class Ui_MainWindow(object):
         self.ButtonAddAnswer1.setObjectName(u"ButtonAddAnswer1")
         self.ButtonAddAnswer1.setGeometry(QRect(640, 840, 101, 51))
         self.listWidgetQuestion1 = QListWidget(self.centralwidget)
-        QListWidgetItem(self.listWidgetQuestion1)
         QListWidgetItem(self.listWidgetQuestion1)
         QListWidgetItem(self.listWidgetQuestion1)
         QListWidgetItem(self.listWidgetQuestion1)
@@ -289,11 +290,11 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem6 = self.listWidgetQuestion2.item(6)
         ___qlistwidgetitem6.setText(QCoreApplication.translate("MainWindow", u"What is the person doing?", None));
         ___qlistwidgetitem7 = self.listWidgetQuestion2.item(7)
-        ___qlistwidgetitem7.setText(QCoreApplication.translate("MainWindow", u"What are the people doing?", None));
+        ___qlistwidgetitem7.setText(QCoreApplication.translate("MainWindow", u"What are the peeple doing?", None));
         ___qlistwidgetitem8 = self.listWidgetQuestion2.item(8)
         ___qlistwidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Are there any vehicles?", None));
         ___qlistwidgetitem9 = self.listWidgetQuestion2.item(9)
-        ___qlistwidgetitem9.setText(QCoreApplication.translate("MainWindow", u"How many people  appeared?", None));
+        ___qlistwidgetitem9.setText(QCoreApplication.translate("MainWindow", u"How many people  appears?", None));
         ___qlistwidgetitem10 = self.listWidgetQuestion2.item(10)
         ___qlistwidgetitem10.setText(QCoreApplication.translate("MainWindow", u"What is happening?", None));
         ___qlistwidgetitem11 = self.listWidgetQuestion2.item(11)
@@ -302,6 +303,8 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem12.setText(QCoreApplication.translate("MainWindow", u"How does the person feel?", None));
         ___qlistwidgetitem13 = self.listWidgetQuestion2.item(13)
         ___qlistwidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Are there any plants?", None));
+        ___qlistwidgetitem14 = self.listWidgetQuestion2.item(14)
+        ___qlistwidgetitem14.setText(QCoreApplication.translate("MainWindow", u"What is the object?", None));
         self.listWidgetQuestion2.setSortingEnabled(__sortingEnabled)
 
         self.ButtonSelectPart2.setText(QCoreApplication.translate("MainWindow", u"Select ->", None))
@@ -328,12 +331,14 @@ class Ui_MainWindow(object):
 
         __sortingEnabled1 = self.listWidget_class.isSortingEnabled()
         self.listWidget_class.setSortingEnabled(False)
-        ___qlistwidgetitem14 = self.listWidget_class.item(0)
-        ___qlistwidgetitem14.setText(QCoreApplication.translate("MainWindow", u"movie", None));
-        ___qlistwidgetitem15 = self.listWidget_class.item(1)
-        ___qlistwidgetitem15.setText(QCoreApplication.translate("MainWindow", u"series", None));
-        ___qlistwidgetitem16 = self.listWidget_class.item(2)
-        ___qlistwidgetitem16.setText(QCoreApplication.translate("MainWindow", u"documentaries", None));
+        ___qlistwidgetitem15 = self.listWidget_class.item(0)
+        ___qlistwidgetitem15.setText(QCoreApplication.translate("MainWindow", u"movie", None));
+        ___qlistwidgetitem16 = self.listWidget_class.item(1)
+        ___qlistwidgetitem16.setText(QCoreApplication.translate("MainWindow", u"series", None));
+        ___qlistwidgetitem17 = self.listWidget_class.item(2)
+        ___qlistwidgetitem17.setText(QCoreApplication.translate("MainWindow", u"documentaries", None));
+        ___qlistwidgetitem18 = self.listWidget_class.item(3)
+        ___qlistwidgetitem18.setText(QCoreApplication.translate("MainWindow", u"vlog", None));
         self.listWidget_class.setSortingEnabled(__sortingEnabled1)
 
         self.label_w.setText(QCoreApplication.translate("MainWindow", u"width", None))
@@ -348,24 +353,22 @@ class Ui_MainWindow(object):
 
         __sortingEnabled2 = self.listWidgetQuestion1.isSortingEnabled()
         self.listWidgetQuestion1.setSortingEnabled(False)
-        ___qlistwidgetitem17 = self.listWidgetQuestion1.item(0)
-        ___qlistwidgetitem17.setText(QCoreApplication.translate("MainWindow", u"Where does it happen in the video?", None));
-        ___qlistwidgetitem18 = self.listWidgetQuestion1.item(1)
-        ___qlistwidgetitem18.setText(QCoreApplication.translate("MainWindow", u"Are there more then three different backgrounds appearing in the video?", None));
-        ___qlistwidgetitem19 = self.listWidgetQuestion1.item(2)
-        ___qlistwidgetitem19.setText(QCoreApplication.translate("MainWindow", u"What's the time in the video?", None));
-        ___qlistwidgetitem20 = self.listWidgetQuestion1.item(3)
-        ___qlistwidgetitem20.setText(QCoreApplication.translate("MainWindow", u"How many man and woman appears in the video?", None));
-        ___qlistwidgetitem21 = self.listWidgetQuestion1.item(4)
-        ___qlistwidgetitem21.setText(QCoreApplication.translate("MainWindow", u"When does the things in the video happens, ancient age, modern age or future?", None));
-        ___qlistwidgetitem22 = self.listWidgetQuestion1.item(5)
-        ___qlistwidgetitem22.setText(QCoreApplication.translate("MainWindow", u"How many characters appears in this video?", None));
-        ___qlistwidgetitem23 = self.listWidgetQuestion1.item(6)
-        ___qlistwidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Does more than 5 people appered in the video?", None));
-        ___qlistwidgetitem24 = self.listWidgetQuestion1.item(7)
-        ___qlistwidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Does it happen during day or night?", None));
-        ___qlistwidgetitem25 = self.listWidgetQuestion1.item(8)
-        ___qlistwidgetitem25.setText(QCoreApplication.translate("MainWindow", u"Are there more then three different backgrounds appearing in the vide", None));
+        ___qlistwidgetitem19 = self.listWidgetQuestion1.item(0)
+        ___qlistwidgetitem19.setText(QCoreApplication.translate("MainWindow", u"Where does it happen in the video?", None));
+        ___qlistwidgetitem20 = self.listWidgetQuestion1.item(1)
+        ___qlistwidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Are there more then three different backgrounds appearing in the video?", None));
+        ___qlistwidgetitem21 = self.listWidgetQuestion1.item(2)
+        ___qlistwidgetitem21.setText(QCoreApplication.translate("MainWindow", u"What's the time in the video?", None));
+        ___qlistwidgetitem22 = self.listWidgetQuestion1.item(3)
+        ___qlistwidgetitem22.setText(QCoreApplication.translate("MainWindow", u"How many man and woman appears in the video?", None));
+        ___qlistwidgetitem23 = self.listWidgetQuestion1.item(4)
+        ___qlistwidgetitem23.setText(QCoreApplication.translate("MainWindow", u"When does it happens in the video, ancient age, modern age or future?", None));
+        ___qlistwidgetitem24 = self.listWidgetQuestion1.item(5)
+        ___qlistwidgetitem24.setText(QCoreApplication.translate("MainWindow", u"How many characters appears in this video?", None));
+        ___qlistwidgetitem25 = self.listWidgetQuestion1.item(6)
+        ___qlistwidgetitem25.setText(QCoreApplication.translate("MainWindow", u"Do more than 5 people appear in the video?", None));
+        ___qlistwidgetitem26 = self.listWidgetQuestion1.item(7)
+        ___qlistwidgetitem26.setText(QCoreApplication.translate("MainWindow", u"Does it happen during day or night?", None));
         self.listWidgetQuestion1.setSortingEnabled(__sortingEnabled2)
 
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"Path", None))
