@@ -290,7 +290,7 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem6 = self.listWidgetQuestion2.item(6)
         ___qlistwidgetitem6.setText(QCoreApplication.translate("MainWindow", u"What is the person doing?", None));
         ___qlistwidgetitem7 = self.listWidgetQuestion2.item(7)
-        ___qlistwidgetitem7.setText(QCoreApplication.translate("MainWindow", u"What are the peeple doing?", None));
+        ___qlistwidgetitem7.setText(QCoreApplication.translate("MainWindow", u"What are the people doing?", None));
         ___qlistwidgetitem8 = self.listWidgetQuestion2.item(8)
         ___qlistwidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Are there any vehicles?", None));
         ___qlistwidgetitem9 = self.listWidgetQuestion2.item(9)

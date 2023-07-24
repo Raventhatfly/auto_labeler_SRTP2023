@@ -6,39 +6,104 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>853</width>
-    <height>1135</height>
+    <width>1536</width>
+    <height>944</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>json for labeling generator</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListWidget" name="listWidget">
+   <widget class="QListWidget" name="listWidgetQuestion2">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>580</y>
+      <x>790</x>
+      <y>60</y>
       <width>341</width>
-      <height>191</height>
+      <height>481</height>
      </rect>
     </property>
     <item>
      <property name="text">
-      <string>What is the shirt color of the person?</string>
+      <string>What is the clothes color of the person?</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>How many people  appeared in this video?</string>
+      <string>Is the person a man or a woman?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Are there any animals?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Are there any people?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Is it day or night?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Where is the scene?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>What is the person doing?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>What are the people doing?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Are there any vehicles?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>How many people  appears?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>What is happening?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>What is the background color?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>How does the person feel?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Are there any plants?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>What is the object?</string>
      </property>
     </item>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="ButtonSelectPart2">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>1020</y>
+      <x>790</x>
+      <y>660</y>
       <width>341</width>
       <height>31</height>
      </rect>
@@ -47,21 +112,21 @@
      <string>Select -&gt;</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="textEditTime1">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>946</y>
+      <x>964</x>
+      <y>740</y>
       <width>41</width>
       <height>51</height>
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_2">
+   <widget class="QTextEdit" name="textEditTIme2">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>946</y>
+      <x>1024</x>
+      <y>740</y>
       <width>41</width>
       <height>51</height>
      </rect>
@@ -70,8 +135,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>46</x>
-      <y>906</y>
+      <x>960</x>
+      <y>710</y>
       <width>101</width>
       <height>20</height>
      </rect>
@@ -89,8 +154,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>960</y>
+      <x>984</x>
+      <y>754</y>
       <width>57</width>
       <height>21</height>
      </rect>
@@ -110,8 +175,8 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>910</y>
+      <x>1120</x>
+      <y>700</y>
       <width>171</width>
       <height>16</height>
      </rect>
@@ -120,31 +185,31 @@
      <string>Quesiton Answer</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_3">
+   <widget class="QTextEdit" name="textEditAnswer2">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>940</y>
+      <x>1100</x>
+      <y>740</y>
       <width>231</width>
       <height>51</height>
      </rect>
     </property>
    </widget>
-   <widget class="QListWidget" name="listWidget_2">
+   <widget class="QListWidget" name="listWidgetWrite2">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>580</y>
+      <x>1160</x>
+      <y>60</y>
       <width>341</width>
-      <height>191</height>
+      <height>481</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="ButtonDelete2">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>810</y>
+      <x>1170</x>
+      <y>660</y>
       <width>341</width>
       <height>31</height>
      </rect>
@@ -153,11 +218,11 @@
      <string>Delete</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="pushButtonGenerate">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>880</y>
+      <x>1160</x>
+      <y>810</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -169,8 +234,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>880</y>
+      <x>970</x>
+      <y>810</y>
       <width>111</width>
       <height>16</height>
      </rect>
@@ -179,11 +244,11 @@
      <string>File Name</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_4">
+   <widget class="QTextEdit" name="textEditFileName">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>900</y>
+      <x>970</x>
+      <y>830</y>
       <width>104</width>
       <height>41</height>
      </rect>
@@ -192,8 +257,8 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>910</y>
+      <x>1080</x>
+      <y>840</y>
       <width>57</width>
       <height>15</height>
      </rect>
@@ -202,116 +267,44 @@
      <string>.json</string>
     </property>
    </widget>
-   <widget class="QListView" name="listView">
+   <widget class="QTextEdit" name="textEdit_SelfDefine2">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>300</y>
-      <width>341</width>
-      <height>111</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="textEdit_5">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>810</y>
+      <x>790</x>
+      <y>610</y>
       <width>341</width>
       <height>41</height>
      </rect>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>550</y>
-      <width>221</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Select the 15 questions.</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_2">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>780</y>
-      <width>221</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Defien your own questions:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>550</y>
-      <width>291</width>
+      <x>1160</x>
+      <y>30</y>
+      <width>341</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Questions to write in:</string>
+     <string>Questions and answers to write in:</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QTextEdit" name="textEdit_SelfDefine1">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>260</y>
-      <width>221</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Select the 5 overall questions.</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="textEdit_6">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>460</y>
+      <x>30</x>
+      <y>790</y>
       <width>341</width>
       <height>41</height>
      </rect>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_4">
+   <widget class="QPushButton" name="ButtonSelectPart1">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>430</y>
-      <width>221</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Defien your own questions:</string>
-    </property>
-   </widget>
-   <widget class="QListView" name="listView_2">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>300</y>
-      <width>341</width>
-      <height>111</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>510</y>
+      <x>30</x>
+      <y>840</y>
       <width>341</width>
       <height>31</height>
      </rect>
@@ -323,34 +316,34 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>260</y>
-      <width>291</width>
+      <x>400</x>
+      <y>410</y>
+      <width>371</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Questions to write in:</string>
+     <string>Questions and answers to write in:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="ButtoFileIncre">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>950</y>
+      <x>800</x>
+      <y>830</y>
       <width>161</width>
-      <height>23</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>File name self increment</string>
+     <string>File Name +1</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="ButtonDelete1">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>510</y>
+      <x>410</x>
+      <y>770</y>
       <width>341</width>
       <height>31</height>
      </rect>
@@ -359,21 +352,21 @@
      <string>delete</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_7">
+   <widget class="QTextEdit" name="textEdit_desciprition">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>180</y>
+      <x>30</x>
+      <y>340</y>
       <width>721</width>
-      <height>70</height>
+      <height>61</height>
      </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>150</y>
+      <x>30</x>
+      <y>320</y>
       <width>181</width>
       <height>21</height>
      </rect>
@@ -382,34 +375,24 @@
      <string>Detail Description</string>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="plainTextEdit">
+   <widget class="QLabel" name="label_len">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>80</y>
+      <x>80</x>
+      <y>60</y>
       <width>81</width>
-      <height>41</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>90</y>
-      <width>111</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Frames Total</string>
+     <string>Length:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="label_fps">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>90</y>
+      <x>270</x>
+      <y>50</y>
       <width>111</width>
       <height>16</height>
      </rect>
@@ -418,50 +401,467 @@
      <string>Frame Rate</string>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="plainTextEdit_2">
+   <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>80</y>
-      <width>81</width>
-      <height>41</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_7">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>90</y>
-      <width>80</width>
-      <height>23</height>
+      <x>460</x>
+      <y>50</y>
+      <width>41</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>OK</string>
+     <string>class</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonDefault2">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>730</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use Default</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonDefault3">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>610</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use Default</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonTime30s">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>750</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plus 30 seconds</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_len1">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>40</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>54</y>
+      <width>57</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_len2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_class">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>30</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>movie</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>series</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>documentaries</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>vlog</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>110</y>
+      <width>311</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_w">
+       <property name="text">
+        <string>width</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="textEdit_w"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_h">
+       <property name="text">
+        <string>height</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="textEdit_h"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Basic Settings</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowserInfo">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>190</y>
+      <width>571</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonAddAnswer2">
+    <property name="geometry">
+     <rect>
+      <x>1360</x>
+      <y>740</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Answer</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>870</y>
-      <width>171</width>
-      <height>21</height>
+      <x>30</x>
+      <y>230</y>
+      <width>121</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Current Frame Rate</string>
+     <string>Information</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_8">
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>860</y>
-      <width>104</width>
+      <x>460</x>
+      <y>100</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButtonDefault1">
+       <property name="text">
+        <string>Use Defulat</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonConfirm">
+       <property name="text">
+        <string>Confirm</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextEdit" name="textEditAnswer1">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>840</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>810</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quesiton Answer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonAddAnswer1">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>840</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Answer</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidgetQuestion1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>440</y>
+      <width>341</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Where does it happen in the video?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Are there more then three different backgrounds appearing in the video?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>What's the time in the video?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>How many man and woman appears in the video?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>When does it happens in the video, ancient age, modern age or future?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>How many characters appears in this video?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Do more than 5 people appear in the video?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Does it happen during day or night?</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QListWidget" name="listWidgetWrite1">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>440</y>
+      <width>341</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>91</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>Path</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>40</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_path">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>160</y>
+      <width>571</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_num_2">
+    <property name="geometry">
+     <rect>
+      <x>1166</x>
+      <y>560</y>
+      <width>331</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_num_1">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>690</y>
+      <width>341</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>410</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select the 5 global questions.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>710</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Define your own question. </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>740</y>
+      <width>371</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>If this text is filled, the above list </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>760</y>
+      <width>371</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>can't be selected.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>580</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Define your own question. </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>30</y>
+      <width>331</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select the 15 breakpoint questions.</string>
     </property>
    </widget>
   </widget>
@@ -470,7 +870,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>853</width>
+     <width>1536</width>
      <height>20</height>
     </rect>
    </property>

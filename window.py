@@ -185,7 +185,8 @@ class Test_window(QMainWindow, Ui_MainWindow):
             self.data.file_name = self.textEditFileName.toPlainText()
         self.data.file_name += ".json"
         print(self.data.file_name)
-        path = "json_generated/" + self.data.file_name
+        # path = "json_generated/" + self.data.file_name
+        path = "D:/ZJUI/SRTP/数据标注/电影/" + self.data.file_name
         print(path)
         try:
             with open(path,'r') as file:
