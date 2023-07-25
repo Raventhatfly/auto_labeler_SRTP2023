@@ -158,11 +158,14 @@ class Test_window(QMainWindow, Ui_MainWindow):
             question = self.data.question2_ready_list[row]["question"]
             answer = self.textEditAnswer2.toPlainText()
             self.data.question2_ready_list[row]["answer"] = answer
-            time_stamp = (int(self.textEditTime1.toPlainText()) * 60 + int(self.textEditTIme2.toPlainText())) * self.data.fps
-            self.data.question2_ready_list[row]["time"] = time_stamp
-            self.listWidgetWrite2.currentItem().setText(question + " Answer: " + answer + " Time: "+ str(time_stamp))
-            self.show_quesitons_num_info()
-            print(self.data.question2_ready_list)
+            try:
+                time_stamp = (int(self.textEditTime1.toPlainText()) * 60 + int(self.textEditTIme2.toPlainText())) * self.data.fps
+                self.data.question2_ready_list[row]["time"] = time_stamp
+                self.listWidgetWrite2.currentItem().setText(question + " Answer: " + answer + " Time: "+ str(time_stamp))
+                self.show_quesitons_num_info()
+                print(self.data.question2_ready_list)
+            except:
+                QMessageBox.warning(self, "Warning", "Time stamp must be integers!", QMessageBox.Cancel)
 
 
     def generate_callback(self):
