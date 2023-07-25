@@ -14,7 +14,7 @@ class Test_window(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        # self.setWindowIcon(QIcon("./icon/1.jpg"))
+        self.setWindowIcon(QIcon("./icon/img.png"))
         self.setWindowTitle("Json Generator")
         self.data = UI_data()
         self.data.load_defualt()
@@ -52,6 +52,7 @@ class Test_window(QMainWindow, Ui_MainWindow):
             text = self.textEdit_SelfDefine1.toPlainText()
             self.listWidgetWrite1.addItem(text)
             self.textEdit_SelfDefine1.clear()
+        self.listWidgetWrite1.setCurrentItem(self.listWidgetWrite1.item(len(self.data.question1_ready_list)))
         self.data.question1_ready_list.append({"question": text, "answer": ""})
         self.show_quesitons_num_info()
         print(self.data.question1_ready_list)
@@ -73,6 +74,7 @@ class Test_window(QMainWindow, Ui_MainWindow):
             text = self.textEdit_SelfDefine2.toPlainText()
             self_define = True
             self.textEdit_SelfDefine2.clear()
+        self.listWidgetWrite2.setCurrentItem(self.listWidgetWrite2.item(len(self.data.question2_ready_list)))
         # data structure: (Time, Question, Answer, Self Defien?)-1 time means time not added
         self.data.question2_ready_list.append({"time":-1,"question":text,"answer":"","self_define":self_define})
         # self.data.current_questions2 = len(self.data.question2_ready_list)
