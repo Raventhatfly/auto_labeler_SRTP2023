@@ -33,6 +33,9 @@ class Test_window(QMainWindow, Ui_MainWindow):
         self.pushButtonGenerate.clicked.connect(self.generate_callback)
         self.ButtoFileIncre.clicked.connect(self.increment_callback)
         self.ButtonTime30s.clicked.connect(self.plus30s_callback)
+        self.ButtonTimePlus1s.clicked.connect(self.plus1s_callback)
+        self.ButtonTimeMinus1s.clicked.connect(self.mius1s_callback)
+        self.ButtonTimeReset.clicked.connect(self.time_reset_callback)
 
     def select1_callback(self):
         if self.data.current_questions1 >= 5:
@@ -257,6 +260,43 @@ class Test_window(QMainWindow, Ui_MainWindow):
             QMessageBox.warning(self, "Warning",
                                 "Please enter integer time!",
                                 QMessageBox.Cancel)
+
+    def plus1s_callback(self):
+        try:
+            minutes = int(self.textEditTime1.toPlainText())
+            seconds = int(self.textEditTIme2.toPlainText())
+            seconds = seconds + 1
+            if seconds >= 60:
+                seconds -= 60
+                minutes += 1
+            self.textEditTime1.setText(str(minutes))
+            self.textEditTIme2.setText(str(seconds))
+        except:
+            QMessageBox.warning(self, "Warning",
+                                "Please enter integer time!",
+                                QMessageBox.Cancel)
+
+    def mius1s_callback(self):
+        try:
+            minutes = int(self.textEditTime1.toPlainText())
+            seconds = int(self.textEditTIme2.toPlainText())
+            seconds = seconds - 1
+            if seconds < 0:
+                seconds += 60
+                minutes -= 1
+                if minutes < 0 :
+                    minutes = 0
+                    seconds = 0
+            self.textEditTime1.setText(str(minutes))
+            self.textEditTIme2.setText(str(seconds))
+        except:
+            QMessageBox.warning(self, "Warning",
+                                "Please enter integer time!",
+                                QMessageBox.Cancel)
+
+    def time_reset_callback(self):
+        self.textEditTime1.setText(str(0))
+        self.textEditTIme2.setText(str(0))
 
     def get_num_answered(self,ready_list):
         num = 0
