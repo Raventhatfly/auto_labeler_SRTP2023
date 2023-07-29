@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'json_generatorrRnfbA.ui'
+## Form generated from reading UI file 'json_generator_for_ZYCumXqfj.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.3
 ##
@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1536, 944)
+        MainWindow.resize(1435, 762)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.listWidgetQuestion2 = QListWidget(self.centralwidget)
@@ -39,79 +39,79 @@ class Ui_MainWindow(object):
         QListWidgetItem(self.listWidgetQuestion2)
         QListWidgetItem(self.listWidgetQuestion2)
         self.listWidgetQuestion2.setObjectName(u"listWidgetQuestion2")
-        self.listWidgetQuestion2.setGeometry(QRect(790, 60, 341, 481))
+        self.listWidgetQuestion2.setGeometry(QRect(720, 50, 341, 321))
         self.ButtonSelectPart2 = QPushButton(self.centralwidget)
         self.ButtonSelectPart2.setObjectName(u"ButtonSelectPart2")
-        self.ButtonSelectPart2.setGeometry(QRect(790, 660, 341, 31))
+        self.ButtonSelectPart2.setGeometry(QRect(720, 490, 341, 31))
         self.textEditTime1 = QTextEdit(self.centralwidget)
         self.textEditTime1.setObjectName(u"textEditTime1")
-        self.textEditTime1.setGeometry(QRect(964, 740, 41, 51))
+        self.textEditTime1.setGeometry(QRect(920, 566, 41, 51))
         self.textEditTIme2 = QTextEdit(self.centralwidget)
         self.textEditTIme2.setObjectName(u"textEditTIme2")
-        self.textEditTIme2.setGeometry(QRect(1024, 740, 41, 51))
+        self.textEditTIme2.setGeometry(QRect(980, 566, 41, 51))
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(960, 710, 101, 20))
+        self.label.setGeometry(QRect(916, 536, 101, 20))
         self.label.setAlignment(Qt.AlignCenter)
         self.label.setWordWrap(False)
         self.label_2 = QLabel(self.centralwidget)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(984, 754, 57, 21))
+        self.label_2.setGeometry(QRect(940, 580, 57, 21))
         font = QFont()
         font.setPointSize(14)
         self.label_2.setFont(font)
         self.label_2.setAlignment(Qt.AlignCenter)
         self.label_4 = QLabel(self.centralwidget)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(1120, 700, 171, 16))
+        self.label_4.setGeometry(QRect(1050, 530, 171, 16))
         self.textEditAnswer2 = QTextEdit(self.centralwidget)
         self.textEditAnswer2.setObjectName(u"textEditAnswer2")
-        self.textEditAnswer2.setGeometry(QRect(1100, 740, 231, 51))
+        self.textEditAnswer2.setGeometry(QRect(1030, 570, 231, 51))
         self.listWidgetWrite2 = QListWidget(self.centralwidget)
         self.listWidgetWrite2.setObjectName(u"listWidgetWrite2")
-        self.listWidgetWrite2.setGeometry(QRect(1160, 60, 341, 481))
+        self.listWidgetWrite2.setGeometry(QRect(1064, 50, 341, 321))
         self.ButtonDelete2 = QPushButton(self.centralwidget)
         self.ButtonDelete2.setObjectName(u"ButtonDelete2")
-        self.ButtonDelete2.setGeometry(QRect(1170, 660, 341, 31))
+        self.ButtonDelete2.setGeometry(QRect(1074, 490, 341, 31))
         self.pushButtonGenerate = QPushButton(self.centralwidget)
         self.pushButtonGenerate.setObjectName(u"pushButtonGenerate")
-        self.pushButtonGenerate.setGeometry(QRect(1340, 810, 161, 61))
+        self.pushButtonGenerate.setGeometry(QRect(1270, 630, 141, 61))
         self.label_5 = QLabel(self.centralwidget)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(1170, 800, 111, 16))
+        self.label_5.setGeometry(QRect(1100, 620, 111, 16))
         self.textEditFileName = QTextEdit(self.centralwidget)
         self.textEditFileName.setObjectName(u"textEditFileName")
-        self.textEditFileName.setGeometry(QRect(1170, 820, 104, 41))
+        self.textEditFileName.setGeometry(QRect(1100, 640, 104, 41))
         self.label_6 = QLabel(self.centralwidget)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(1280, 830, 57, 15))
+        self.label_6.setGeometry(QRect(1210, 650, 57, 15))
         self.textEdit_SelfDefine2 = QTextEdit(self.centralwidget)
         self.textEdit_SelfDefine2.setObjectName(u"textEdit_SelfDefine2")
-        self.textEdit_SelfDefine2.setGeometry(QRect(790, 610, 341, 41))
+        self.textEdit_SelfDefine2.setGeometry(QRect(720, 440, 341, 41))
         self.label_3 = QLabel(self.centralwidget)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(1160, 30, 341, 16))
+        self.label_3.setGeometry(QRect(1064, 20, 341, 16))
         self.textEdit_SelfDefine1 = QTextEdit(self.centralwidget)
         self.textEdit_SelfDefine1.setObjectName(u"textEdit_SelfDefine1")
-        self.textEdit_SelfDefine1.setGeometry(QRect(30, 790, 341, 41))
+        self.textEdit_SelfDefine1.setGeometry(QRect(20, 610, 341, 41))
         self.ButtonSelectPart1 = QPushButton(self.centralwidget)
         self.ButtonSelectPart1.setObjectName(u"ButtonSelectPart1")
-        self.ButtonSelectPart1.setGeometry(QRect(30, 840, 341, 31))
+        self.ButtonSelectPart1.setGeometry(QRect(20, 660, 341, 31))
         self.label_7 = QLabel(self.centralwidget)
         self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(400, 410, 371, 16))
+        self.label_7.setGeometry(QRect(360, 330, 291, 16))
         self.ButtoFileIncre = QPushButton(self.centralwidget)
         self.ButtoFileIncre.setObjectName(u"ButtoFileIncre")
-        self.ButtoFileIncre.setGeometry(QRect(1000, 820, 161, 41))
+        self.ButtoFileIncre.setGeometry(QRect(930, 640, 161, 41))
         self.ButtonDelete1 = QPushButton(self.centralwidget)
         self.ButtonDelete1.setObjectName(u"ButtonDelete1")
-        self.ButtonDelete1.setGeometry(QRect(410, 770, 341, 31))
+        self.ButtonDelete1.setGeometry(QRect(370, 590, 341, 31))
         self.textEdit_desciprition = QTextEdit(self.centralwidget)
         self.textEdit_desciprition.setObjectName(u"textEdit_desciprition")
-        self.textEdit_desciprition.setGeometry(QRect(30, 340, 721, 61))
+        self.textEdit_desciprition.setGeometry(QRect(20, 270, 691, 51))
         self.label_8 = QLabel(self.centralwidget)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setGeometry(QRect(30, 320, 181, 21))
+        self.label_8.setGeometry(QRect(20, 250, 181, 21))
         self.label_len = QLabel(self.centralwidget)
         self.label_len.setObjectName(u"label_len")
         self.label_len.setGeometry(QRect(80, 60, 81, 16))
@@ -123,13 +123,13 @@ class Ui_MainWindow(object):
         self.label_12.setGeometry(QRect(460, 50, 41, 16))
         self.pushButtonDefault2 = QPushButton(self.centralwidget)
         self.pushButtonDefault2.setObjectName(u"pushButtonDefault2")
-        self.pushButtonDefault2.setGeometry(QRect(410, 730, 341, 31))
+        self.pushButtonDefault2.setGeometry(QRect(370, 550, 341, 31))
         self.pushButtonDefault3 = QPushButton(self.centralwidget)
         self.pushButtonDefault3.setObjectName(u"pushButtonDefault3")
-        self.pushButtonDefault3.setGeometry(QRect(1170, 610, 341, 31))
+        self.pushButtonDefault3.setGeometry(QRect(1074, 440, 341, 31))
         self.ButtonTime30s = QPushButton(self.centralwidget)
         self.ButtonTime30s.setObjectName(u"ButtonTime30s")
-        self.ButtonTime30s.setGeometry(QRect(790, 750, 161, 31))
+        self.ButtonTime30s.setGeometry(QRect(730, 580, 161, 41))
         self.textEdit_len1 = QTextEdit(self.centralwidget)
         self.textEdit_len1.setObjectName(u"textEdit_len1")
         self.textEdit_len1.setGeometry(QRect(160, 40, 41, 51))
@@ -147,10 +147,10 @@ class Ui_MainWindow(object):
         QListWidgetItem(self.listWidget_class)
         QListWidgetItem(self.listWidget_class)
         self.listWidget_class.setObjectName(u"listWidget_class")
-        self.listWidget_class.setGeometry(QRect(510, 30, 241, 61))
+        self.listWidget_class.setGeometry(QRect(510, 30, 191, 61))
         self.horizontalLayoutWidget = QWidget(self.centralwidget)
         self.horizontalLayoutWidget.setObjectName(u"horizontalLayoutWidget")
-        self.horizontalLayoutWidget.setGeometry(QRect(130, 110, 311, 31))
+        self.horizontalLayoutWidget.setGeometry(QRect(140, 100, 321, 41))
         self.horizontalLayout = QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
@@ -179,16 +179,16 @@ class Ui_MainWindow(object):
         self.label_16.setGeometry(QRect(70, 20, 91, 16))
         self.textBrowserInfo = QTextBrowser(self.centralwidget)
         self.textBrowserInfo.setObjectName(u"textBrowserInfo")
-        self.textBrowserInfo.setGeometry(QRect(130, 190, 571, 131))
+        self.textBrowserInfo.setGeometry(QRect(130, 190, 571, 51))
         self.ButtonAddAnswer2 = QPushButton(self.centralwidget)
         self.ButtonAddAnswer2.setObjectName(u"ButtonAddAnswer2")
-        self.ButtonAddAnswer2.setGeometry(QRect(1340, 740, 161, 51))
+        self.ButtonAddAnswer2.setGeometry(QRect(1270, 570, 141, 51))
         self.label_11 = QLabel(self.centralwidget)
         self.label_11.setObjectName(u"label_11")
-        self.label_11.setGeometry(QRect(30, 230, 121, 41))
+        self.label_11.setGeometry(QRect(20, 200, 121, 41))
         self.horizontalLayoutWidget_2 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_2.setObjectName(u"horizontalLayoutWidget_2")
-        self.horizontalLayoutWidget_2.setGeometry(QRect(460, 100, 251, 51))
+        self.horizontalLayoutWidget_2.setGeometry(QRect(500, 90, 191, 51))
         self.horizontalLayout_2 = QHBoxLayout(self.horizontalLayoutWidget_2)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -204,13 +204,13 @@ class Ui_MainWindow(object):
 
         self.textEditAnswer1 = QTextEdit(self.centralwidget)
         self.textEditAnswer1.setObjectName(u"textEditAnswer1")
-        self.textEditAnswer1.setGeometry(QRect(410, 840, 211, 51))
+        self.textEditAnswer1.setGeometry(QRect(370, 660, 211, 51))
         self.label_17 = QLabel(self.centralwidget)
         self.label_17.setObjectName(u"label_17")
-        self.label_17.setGeometry(QRect(410, 810, 171, 16))
+        self.label_17.setGeometry(QRect(370, 630, 171, 16))
         self.ButtonAddAnswer1 = QPushButton(self.centralwidget)
         self.ButtonAddAnswer1.setObjectName(u"ButtonAddAnswer1")
-        self.ButtonAddAnswer1.setGeometry(QRect(640, 840, 101, 51))
+        self.ButtonAddAnswer1.setGeometry(QRect(600, 660, 101, 51))
         self.listWidgetQuestion1 = QListWidget(self.centralwidget)
         QListWidgetItem(self.listWidgetQuestion1)
         QListWidgetItem(self.listWidgetQuestion1)
@@ -220,12 +220,11 @@ class Ui_MainWindow(object):
         QListWidgetItem(self.listWidgetQuestion1)
         QListWidgetItem(self.listWidgetQuestion1)
         QListWidgetItem(self.listWidgetQuestion1)
-        QListWidgetItem(self.listWidgetQuestion1)
         self.listWidgetQuestion1.setObjectName(u"listWidgetQuestion1")
-        self.listWidgetQuestion1.setGeometry(QRect(30, 440, 341, 241))
+        self.listWidgetQuestion1.setGeometry(QRect(20, 360, 341, 141))
         self.listWidgetWrite1 = QListWidget(self.centralwidget)
         self.listWidgetWrite1.setObjectName(u"listWidgetWrite1")
-        self.listWidgetWrite1.setGeometry(QRect(410, 440, 341, 241))
+        self.listWidgetWrite1.setGeometry(QRect(370, 360, 341, 141))
         self.label_14 = QLabel(self.centralwidget)
         self.label_14.setObjectName(u"label_14")
         self.label_14.setGeometry(QRect(30, 150, 91, 41))
@@ -237,41 +236,41 @@ class Ui_MainWindow(object):
         self.textEdit_path.setGeometry(QRect(130, 160, 571, 21))
         self.label_num_2 = QLabel(self.centralwidget)
         self.label_num_2.setObjectName(u"label_num_2")
-        self.label_num_2.setGeometry(QRect(1166, 560, 331, 20))
+        self.label_num_2.setGeometry(QRect(1070, 390, 331, 20))
         self.label_num_1 = QLabel(self.centralwidget)
         self.label_num_1.setObjectName(u"label_num_1")
-        self.label_num_1.setGeometry(QRect(410, 690, 341, 20))
+        self.label_num_1.setGeometry(QRect(370, 510, 341, 20))
         self.label_9 = QLabel(self.centralwidget)
         self.label_9.setObjectName(u"label_9")
-        self.label_9.setGeometry(QRect(30, 410, 261, 16))
+        self.label_9.setGeometry(QRect(20, 330, 261, 16))
         self.label_10 = QLabel(self.centralwidget)
         self.label_10.setObjectName(u"label_10")
-        self.label_10.setGeometry(QRect(30, 710, 261, 16))
+        self.label_10.setGeometry(QRect(20, 530, 261, 16))
         self.label_15 = QLabel(self.centralwidget)
         self.label_15.setObjectName(u"label_15")
-        self.label_15.setGeometry(QRect(30, 740, 371, 16))
+        self.label_15.setGeometry(QRect(20, 560, 371, 16))
         self.label_18 = QLabel(self.centralwidget)
         self.label_18.setObjectName(u"label_18")
-        self.label_18.setGeometry(QRect(30, 760, 371, 16))
+        self.label_18.setGeometry(QRect(20, 580, 371, 16))
         self.label_19 = QLabel(self.centralwidget)
         self.label_19.setObjectName(u"label_19")
-        self.label_19.setGeometry(QRect(790, 580, 261, 16))
+        self.label_19.setGeometry(QRect(720, 410, 261, 16))
         self.label_20 = QLabel(self.centralwidget)
         self.label_20.setObjectName(u"label_20")
-        self.label_20.setGeometry(QRect(790, 30, 331, 16))
+        self.label_20.setGeometry(QRect(720, 20, 331, 16))
         self.ButtonTimeReset = QPushButton(self.centralwidget)
         self.ButtonTimeReset.setObjectName(u"ButtonTimeReset")
-        self.ButtonTimeReset.setGeometry(QRect(790, 710, 161, 31))
+        self.ButtonTimeReset.setGeometry(QRect(730, 530, 161, 41))
         self.ButtonTimePlus1s = QPushButton(self.centralwidget)
         self.ButtonTimePlus1s.setObjectName(u"ButtonTimePlus1s")
-        self.ButtonTimePlus1s.setGeometry(QRect(790, 790, 161, 31))
+        self.ButtonTimePlus1s.setGeometry(QRect(730, 630, 161, 41))
         self.ButtonTimeMinus1s = QPushButton(self.centralwidget)
         self.ButtonTimeMinus1s.setObjectName(u"ButtonTimeMinus1s")
-        self.ButtonTimeMinus1s.setGeometry(QRect(790, 830, 161, 31))
+        self.ButtonTimeMinus1s.setGeometry(QRect(730, 680, 161, 21))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1536, 20))
+        self.menubar.setGeometry(QRect(0, 0, 1435, 20))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -290,37 +289,37 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem = self.listWidgetQuestion2.item(0)
         ___qlistwidgetitem.setText(QCoreApplication.translate("MainWindow", u"What is the clothes color of the person?", None));
         ___qlistwidgetitem1 = self.listWidgetQuestion2.item(1)
-        ___qlistwidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Is the person a man or a woman?", None));
+        ___qlistwidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Does the perosn look happy?", None));
         ___qlistwidgetitem2 = self.listWidgetQuestion2.item(2)
-        ___qlistwidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Are there any animals?", None));
+        ___qlistwidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Where is it?", None));
         ___qlistwidgetitem3 = self.listWidgetQuestion2.item(3)
-        ___qlistwidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Are there any people?", None));
+        ___qlistwidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Is it day or night?", None));
         ___qlistwidgetitem4 = self.listWidgetQuestion2.item(4)
-        ___qlistwidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Is it day or night?", None));
+        ___qlistwidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Where is the scene?", None));
         ___qlistwidgetitem5 = self.listWidgetQuestion2.item(5)
-        ___qlistwidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Where is the scene?", None));
+        ___qlistwidgetitem5.setText(QCoreApplication.translate("MainWindow", u"What is the person doing?", None));
         ___qlistwidgetitem6 = self.listWidgetQuestion2.item(6)
-        ___qlistwidgetitem6.setText(QCoreApplication.translate("MainWindow", u"What is the person doing?", None));
+        ___qlistwidgetitem6.setText(QCoreApplication.translate("MainWindow", u"What are the people doing?", None));
         ___qlistwidgetitem7 = self.listWidgetQuestion2.item(7)
-        ___qlistwidgetitem7.setText(QCoreApplication.translate("MainWindow", u"What are the people doing?", None));
+        ___qlistwidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Are there any vehicles?", None));
         ___qlistwidgetitem8 = self.listWidgetQuestion2.item(8)
-        ___qlistwidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Are there any vehicles?", None));
+        ___qlistwidgetitem8.setText(QCoreApplication.translate("MainWindow", u"How many people appeared?", None));
         ___qlistwidgetitem9 = self.listWidgetQuestion2.item(9)
-        ___qlistwidgetitem9.setText(QCoreApplication.translate("MainWindow", u"How many people  appears?", None));
+        ___qlistwidgetitem9.setText(QCoreApplication.translate("MainWindow", u"What is happening?", None));
         ___qlistwidgetitem10 = self.listWidgetQuestion2.item(10)
-        ___qlistwidgetitem10.setText(QCoreApplication.translate("MainWindow", u"What is happening?", None));
+        ___qlistwidgetitem10.setText(QCoreApplication.translate("MainWindow", u"What is the background color?", None));
         ___qlistwidgetitem11 = self.listWidgetQuestion2.item(11)
-        ___qlistwidgetitem11.setText(QCoreApplication.translate("MainWindow", u"What is the background color?", None));
+        ___qlistwidgetitem11.setText(QCoreApplication.translate("MainWindow", u"How the person feel?", None));
         ___qlistwidgetitem12 = self.listWidgetQuestion2.item(12)
-        ___qlistwidgetitem12.setText(QCoreApplication.translate("MainWindow", u"How does the person feel?", None));
+        ___qlistwidgetitem12.setText(QCoreApplication.translate("MainWindow", u"How is the weather?", None));
         ___qlistwidgetitem13 = self.listWidgetQuestion2.item(13)
         ___qlistwidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Are there any plants?", None));
         ___qlistwidgetitem14 = self.listWidgetQuestion2.item(14)
-        ___qlistwidgetitem14.setText(QCoreApplication.translate("MainWindow", u"What is the object?", None));
+        ___qlistwidgetitem14.setText(QCoreApplication.translate("MainWindow", u"Are there any animals?", None));
         ___qlistwidgetitem15 = self.listWidgetQuestion2.item(15)
-        ___qlistwidgetitem15.setText(QCoreApplication.translate("MainWindow", u"Is it indoor or outdoor?", None));
+        ___qlistwidgetitem15.setText(QCoreApplication.translate("MainWindow", u"What is in the person's hand?", None));
         ___qlistwidgetitem16 = self.listWidgetQuestion2.item(16)
-        ___qlistwidgetitem16.setText(QCoreApplication.translate("MainWindow", u"How is the weather?", None));
+        ___qlistwidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Is it indoor or outdoor?", None));
         self.listWidgetQuestion2.setSortingEnabled(__sortingEnabled)
 
         self.ButtonSelectPart2.setText(QCoreApplication.translate("MainWindow", u"Select ->", None))
@@ -372,21 +371,19 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem21 = self.listWidgetQuestion1.item(0)
         ___qlistwidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Where does it happen in the video?", None));
         ___qlistwidgetitem22 = self.listWidgetQuestion1.item(1)
-        ___qlistwidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Are there more then three different backgrounds appearing in the video?", None));
+        ___qlistwidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Are there more then three  different backgrounds appearing in the video?", None));
         ___qlistwidgetitem23 = self.listWidgetQuestion1.item(2)
         ___qlistwidgetitem23.setText(QCoreApplication.translate("MainWindow", u"What's the time in the video?", None));
         ___qlistwidgetitem24 = self.listWidgetQuestion1.item(3)
         ___qlistwidgetitem24.setText(QCoreApplication.translate("MainWindow", u"How many man and woman appears in the video?", None));
         ___qlistwidgetitem25 = self.listWidgetQuestion1.item(4)
-        ___qlistwidgetitem25.setText(QCoreApplication.translate("MainWindow", u"When does it happens in the video, ancient age, modern age or future?", None));
+        ___qlistwidgetitem25.setText(QCoreApplication.translate("MainWindow", u"When does the things in the video happens, ancient age, modern age or future?", None));
         ___qlistwidgetitem26 = self.listWidgetQuestion1.item(5)
         ___qlistwidgetitem26.setText(QCoreApplication.translate("MainWindow", u"How many characters appears in this video?", None));
         ___qlistwidgetitem27 = self.listWidgetQuestion1.item(6)
-        ___qlistwidgetitem27.setText(QCoreApplication.translate("MainWindow", u"Do more than 5 people appear in the video?", None));
+        ___qlistwidgetitem27.setText(QCoreApplication.translate("MainWindow", u"Does more than 5 people appered in the video?", None));
         ___qlistwidgetitem28 = self.listWidgetQuestion1.item(7)
-        ___qlistwidgetitem28.setText(QCoreApplication.translate("MainWindow", u"Does it happen during day or night?", None));
-        ___qlistwidgetitem29 = self.listWidgetQuestion1.item(8)
-        ___qlistwidgetitem29.setText(QCoreApplication.translate("MainWindow", u"Is this clip cartoon?", None));
+        ___qlistwidgetitem28.setText(QCoreApplication.translate("MainWindow", u"Does it happen during day or nigth?", None));
         self.listWidgetQuestion1.setSortingEnabled(__sortingEnabled2)
 
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"Path", None))
