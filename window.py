@@ -5,7 +5,7 @@ import sys
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtWidgets import QWidget, QMainWindow, QApplication
-from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtCore import pyqtSlot, Qt
 from ui_data import UI_data
 import copy
 
@@ -318,3 +318,23 @@ class Test_window(QMainWindow, Ui_MainWindow):
         text2 = "Total:" + str(num_q2) + " Answered:" + str(num_answered_q2) + " Fps:"+str(self.data.fps)
         self.label_num_1.setText(text1)
         self.label_num_2.setText(text2)
+
+    def keyPressEvent(self, event):
+        key = event.key()
+        modifiers = event.modifiers()
+        text = event.text()
+
+        # Handle the key press event based on the key code and modifiers
+        # print("Key Pressed:", text)
+        # print("Key Code:", key)
+        # print("Modifiers:", modifiers)
+
+        # if key == Qt.Key_Up:
+        #     print("Up key was pressed.")
+        #     if self.textEditAnswer2.hasFocus():
+        #         print("history")
+        if key == Qt.Key_Return:
+            if self.listWidgetQuestion1.currentItem() is not None:
+                self.select1_callback()
+            if self.listWidgetQuestion2.currentItem() is not None:
+                self.select2_callback()
