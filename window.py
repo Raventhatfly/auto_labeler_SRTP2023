@@ -334,7 +334,7 @@ class Test_window(QMainWindow, Ui_MainWindow):
         #     if self.textEditAnswer2.hasFocus():
         #         print("history")
         if key == Qt.Key_Return:
-            if self.listWidgetQuestion1.currentItem() is not None:
+            if self.listWidgetQuestion1.currentItem() is not None and len(self.data.question1_ready_list) < 5:
                 self.select1_callback()
-            if self.listWidgetQuestion2.currentItem() is not None:
+            if self.listWidgetQuestion2.currentItem() is not None and len(self.data.question2_ready_list) < 15:
                 self.select2_callback()
