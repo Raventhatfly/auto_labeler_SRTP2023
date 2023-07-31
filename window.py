@@ -333,8 +333,12 @@ class Test_window(QMainWindow, Ui_MainWindow):
         #     print("Up key was pressed.")
         #     if self.textEditAnswer2.hasFocus():
         #         print("history")
-        if key == Qt.Key_Return:
-            if self.listWidgetQuestion1.currentItem() is not None and len(self.data.question1_ready_list) < 5:
-                self.select1_callback()
-            if self.listWidgetQuestion2.currentItem() is not None and len(self.data.question2_ready_list) < 15:
-                self.select2_callback()
+        # if key == Qt.Key_Return:
+        #     if self.listWidgetQuestion1.currentItem() is not None and len(self.data.question1_ready_list) < 5:
+        #         self.select1_callback()
+        #         self.listWidgetQuestion1.clearFocus()
+        #         self.listWidgetQuestion2.clearFocus()
+        #     if self.listWidgetQuestion2.currentItem() is not None and len(self.data.question2_ready_list) < 15:
+        #         self.select2_callback()
+        #         self.listWidgetQuestion1.clearFocus()
+        #         self.listWidgetQuestion2.clearFocus()
