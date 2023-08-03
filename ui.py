@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'json_generatorrRnfbA.ui'
+## Form generated from reading UI file 'json_generatorJHXfsF.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.3
 ##
@@ -378,9 +378,9 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem24 = self.listWidgetQuestion1.item(3)
         ___qlistwidgetitem24.setText(QCoreApplication.translate("MainWindow", u"How many man and woman appears in the video?", None));
         ___qlistwidgetitem25 = self.listWidgetQuestion1.item(4)
-        ___qlistwidgetitem25.setText(QCoreApplication.translate("MainWindow", u"When does it happens in the video, ancient age, modern age or future?", None));
+        ___qlistwidgetitem25.setText(QCoreApplication.translate("MainWindow", u"When does it happen in the video, ancient age, modern age or future?", None));
         ___qlistwidgetitem26 = self.listWidgetQuestion1.item(5)
-        ___qlistwidgetitem26.setText(QCoreApplication.translate("MainWindow", u"How many characters appears in this video?", None));
+        ___qlistwidgetitem26.setText(QCoreApplication.translate("MainWindow", u"How many characters appear in this video?", None));
         ___qlistwidgetitem27 = self.listWidgetQuestion1.item(6)
         ___qlistwidgetitem27.setText(QCoreApplication.translate("MainWindow", u"Do more than 5 people appear in the video?", None));
         ___qlistwidgetitem28 = self.listWidgetQuestion1.item(7)
