@@ -383,7 +383,7 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem27 = self.listWidgetQuestion1.item(6)
         ___qlistwidgetitem27.setText(QCoreApplication.translate("MainWindow", u"Do more than 5 people appear in the video?", None));
         ___qlistwidgetitem28 = self.listWidgetQuestion1.item(7)
-        ___qlistwidgetitem28.setText(QCoreApplication.translate("MainWindow", u"Does it happen during day or nigth?", None));
+        ___qlistwidgetitem28.setText(QCoreApplication.translate("MainWindow", u"Does it happen during day or night?", None));
         self.listWidgetQuestion1.setSortingEnabled(__sortingEnabled2)
 
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"Path", None))
