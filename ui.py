@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'json_generator_for_ZYCumXqfj.ui'
+## Form generated from reading UI file 'json_generator_for_ZYCCGAvzg.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.3
 ##
@@ -289,7 +289,7 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem = self.listWidgetQuestion2.item(0)
         ___qlistwidgetitem.setText(QCoreApplication.translate("MainWindow", u"What is the clothes color of the person?", None));
         ___qlistwidgetitem1 = self.listWidgetQuestion2.item(1)
-        ___qlistwidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Does the perosn look happy?", None));
+        ___qlistwidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Does the person look happy?", None));
         ___qlistwidgetitem2 = self.listWidgetQuestion2.item(2)
         ___qlistwidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Where is it?", None));
         ___qlistwidgetitem3 = self.listWidgetQuestion2.item(3)
@@ -309,7 +309,7 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem10 = self.listWidgetQuestion2.item(10)
         ___qlistwidgetitem10.setText(QCoreApplication.translate("MainWindow", u"What is the background color?", None));
         ___qlistwidgetitem11 = self.listWidgetQuestion2.item(11)
-        ___qlistwidgetitem11.setText(QCoreApplication.translate("MainWindow", u"How the person feel?", None));
+        ___qlistwidgetitem11.setText(QCoreApplication.translate("MainWindow", u"How does the person feel?", None));
         ___qlistwidgetitem12 = self.listWidgetQuestion2.item(12)
         ___qlistwidgetitem12.setText(QCoreApplication.translate("MainWindow", u"How is the weather?", None));
         ___qlistwidgetitem13 = self.listWidgetQuestion2.item(13)
@@ -371,17 +371,17 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem21 = self.listWidgetQuestion1.item(0)
         ___qlistwidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Where does it happen in the video?", None));
         ___qlistwidgetitem22 = self.listWidgetQuestion1.item(1)
-        ___qlistwidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Are there more then three  different backgrounds appearing in the video?", None));
+        ___qlistwidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Are there more then three different backgrounds appearing in the video?", None));
         ___qlistwidgetitem23 = self.listWidgetQuestion1.item(2)
         ___qlistwidgetitem23.setText(QCoreApplication.translate("MainWindow", u"What's the time in the video?", None));
         ___qlistwidgetitem24 = self.listWidgetQuestion1.item(3)
-        ___qlistwidgetitem24.setText(QCoreApplication.translate("MainWindow", u"How many man and woman appears in the video?", None));
+        ___qlistwidgetitem24.setText(QCoreApplication.translate("MainWindow", u"How many man and woman appear in the video?", None));
         ___qlistwidgetitem25 = self.listWidgetQuestion1.item(4)
-        ___qlistwidgetitem25.setText(QCoreApplication.translate("MainWindow", u"When does the things in the video happens, ancient age, modern age or future?", None));
+        ___qlistwidgetitem25.setText(QCoreApplication.translate("MainWindow", u"When do the things in the video happens, ancient age, modern age or future?", None));
         ___qlistwidgetitem26 = self.listWidgetQuestion1.item(5)
-        ___qlistwidgetitem26.setText(QCoreApplication.translate("MainWindow", u"How many characters appears in this video?", None));
+        ___qlistwidgetitem26.setText(QCoreApplication.translate("MainWindow", u"How many characters appear in this video?", None));
         ___qlistwidgetitem27 = self.listWidgetQuestion1.item(6)
-        ___qlistwidgetitem27.setText(QCoreApplication.translate("MainWindow", u"Does more than 5 people appered in the video?", None));
+        ___qlistwidgetitem27.setText(QCoreApplication.translate("MainWindow", u"Do more than 5 people appear in the video?", None));
         ___qlistwidgetitem28 = self.listWidgetQuestion1.item(7)
         ___qlistwidgetitem28.setText(QCoreApplication.translate("MainWindow", u"Does it happen during day or nigth?", None));
         self.listWidgetQuestion1.setSortingEnabled(__sortingEnabled2)
