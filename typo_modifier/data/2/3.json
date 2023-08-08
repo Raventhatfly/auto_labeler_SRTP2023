@@ -1,0 +1,111 @@
+{
+ "info": {
+  "video_path": "",
+  "url": "",
+  "class": "movie",
+  "w": 852,
+  "h": 480,
+  "num_frame": 9624,
+  "fps": 24
+ },
+ "caption": "The video shows a man wearing a black jacket and a black hat, standing in a room with a TV screen in the background. He is holding a remote control in his hand, possibly preparing to use it to operate the TV or another device. The man appears to be looking at the TV screen, possibly observing something displayed on it.",
+ "global": [
+  {
+   "question": "The main characters is man or woman?",
+   "answer": "Man."
+  },
+  {
+   "question": "Where is the guy?",
+   "answer": "On a boat above the sea."
+  },
+  {
+   "question": "Does the person look happy?",
+   "answer": "Into a door."
+  },
+  {
+   "question": "Does the person look happy?",
+   "answer": "Yes."
+  },
+  {
+   "question": "Are there any cars in the video?",
+   "answer": "No."
+  }
+ ],
+ "breakpoint": [
+  {
+   "time": 240,
+   "question": "Does the person look happy?",
+   "answer": "A boat."
+  },
+  {
+   "time": 648,
+   "question": "Does the man look happy?",
+   "answer": "No."
+  },
+  {
+   "time": 1320,
+   "question": "What is in front of the boat?",
+   "answer": "Canvas draw with clouds."
+  },
+  {
+   "time": 1440,
+   "question": "What is the man doing?",
+   "answer": "Hitting the wall with his body."
+  },
+  {
+   "time": 2232,
+   "question": "How does the man feel?",
+   "answer": "Desperate."
+  },
+  {
+   "time": 3120,
+   "question": "What is the man doing?",
+   "answer": "Walking."
+  },
+  {
+   "time": 3600,
+   "question": "Where is the man?",
+   "answer": "On the stairs."
+  },
+  {
+   "time": 4560,
+   "question": "Is the man standing?",
+   "answer": "No."
+  },
+  {
+   "time": 5280,
+   "question": "What is the eye color of the man?",
+   "answer": "Blue."
+  },
+  {
+   "time": 6000,
+   "question": "What is the background color?",
+   "answer": "Blue."
+  },
+  {
+   "time": 7008,
+   "question": "Is the girl's hair color black?",
+   "answer": "No."
+  },
+  {
+   "time": 7608,
+   "question": "Did a man in bathtub appear?",
+   "answer": "Yes."
+  },
+  {
+   "time": 8880,
+   "question": "What are people doing?",
+   "answer": "Cheering."
+  },
+  {
+   "time": 9120,
+   "question": "How many women are there on the table?",
+   "answer": "Five."
+  },
+  {
+   "time": 9312,
+   "question": "Where are the people?",
+   "answer": "In a room full of screens.."
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "info": {
+  "video_path": "",
+  "url": "",
+  "class": "movie",
+  "w": 1280,
+  "h": 720,
+  "num_frame": 13752,
+  "fps": 24
+ },
+ "caption": "",
+ "global": [
+  {
+   "question": "Are there any Vehicles",
+   "answer": "Yes.Helicopter."
+  },
+  {
+   "question": "Does the person look happy?",
+   "answer": "Yes."
+  },
+  {
+   "question": "When does the things in the video happens, ancient age, modern age or future?",
+   "answer": "Modern age."
+  },
+  {
+   "question": "Are there more then three different backgrounds appearing in the video?",
+   "answer": "Yes."
+  },
+  {
+   "question": "Where does it happen in the video?",
+   "answer": "Probably ship, or an aircraft."
+  }
+ ],
+ "breakpoint": [
+  {
+   "time": 0,
+   "question": "Does",
+   "answer": "A screen."
+  },
+  {
+   "time": 720,
+   "question": "Is the person a man or a woman?",
+   "answer": "Man."
+  },
+  {
+   "time": 1440,
+   "question": "What is the person doing?",
+   "answer": "Looking around."
+  },
+  {
+   "time": 2160,
+   "question": "What object appears?",
+   "answer": "A submarine."
+  },
+  {
+   "time": 2880,
+   "question": "What is the person doing?",
+   "answer": "Steering a wheel."
+  },
+  {
+   "time": 3600,
+   "question": "Is the person a man or a woman?",
+   "answer": "Man."
+  },
+  {
+   "time": 4320,
+   "question": "Is it day or night?",
+   "answer": "Day."
+  },
+  {
+   "time": 5040,
+   "question": "Is it day or night?",
+   "answer": "Day."
+  },
+  {
+   "time": 5760,
+   "question": "What is the person doing?",
+   "answer": "Talking to a speaker."
+  },
+  {
+   "time": 6480,
+   "question": "What are the people doing?",
+   "answer": "Fighting."
+  },
+  {
+   "time": 7200,
+   "question": "What is the background color?",
+   "answer": "Dark blue."
+  },
+  {
+   "time": 7920,
+   "question": "Are there any plants?",
+   "answer": "No."
+  },
+  {
+   "time": 9360,
+   "question": "What object appears?",
+   "answer": "A screen, probably aiming at something."
+  },
+  {
+   "time": 8640,
+   "question": "Is the person a man or a woman?",
+   "answer": "Man."
+  },
+  {
+   "time": 10080,
+   "question": "Are there any people?",
+   "answer": "Yes."
+  }
+ ]
+}
